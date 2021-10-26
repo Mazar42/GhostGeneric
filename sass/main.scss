@@ -1,0 +1,23 @@
+/* utils imports*/
+
+@import "./utils/reset.scss";
+@import "./utils/variables";
+
+/* base imports*/
+
+@import "./base/fonts";
+@import "./base/text-styles";
+
+/*components imports*/
+
+@import "./components/buttons";
+
+/*Layout imports*/
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/sections";
+
+/*Pages imports*/
+
+@import "./page/lobby";
