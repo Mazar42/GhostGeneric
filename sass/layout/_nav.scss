@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+
+    a{
+        border-bottom: solid white;
+        padding-bottom: 5px;
+
+        &:hover{
+            border-bottom: solid green;
+        }
+    }
+}
