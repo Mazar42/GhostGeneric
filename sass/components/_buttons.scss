@@ -1,0 +1,8 @@
+.nav-button{
+    border-bottom: solid white;
+    padding-bottom: 10px;
+
+    &:hover{
+        border-bottom: solid $tertiary-color;
+    }
+}

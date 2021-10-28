@@ -1,0 +1,12 @@
+footer{
+    display: flex;
+    padding: 25px 5px;
+    text-align: center;
+    justify-content: space-around;
+    margin-top: 25px;
+    background-color: $footer-bgc;
+
+    h4{
+        padding: 3px;
+    }
+}

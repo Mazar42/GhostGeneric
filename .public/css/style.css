@@ -45,23 +45,79 @@ td, th {
 }
 
 /* base imports*/
+h1 {
+  font-size: large;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
 }
 
+footer {
+  color: white;
+}
+
 /*components imports*/
+.nav-button {
+  border-bottom: solid white;
+  padding-bottom: 10px;
+}
+.nav-button:hover {
+  border-bottom: solid #43d5cb;
+}
+
 /*Layout imports*/
+footer {
+  display: flex;
+  padding: 25px 5px;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 25px;
+  background-color: #242626;
+}
+footer h4 {
+  padding: 3px;
+}
+
+header {
+  position: sticky;
+  background-color: #fff;
+  top: 0;
+  z-index: 2;
+  padding: 15px 15px 0px 15px;
+  margin-bottom: 20px;
+  max-height: 150;
+  text-align: center;
+  box-shadow: 0px 5px 5px 0px rgba(61, 136, 233, 0.527);
+}
+header .logo {
+  margin-bottom: 20px;
+}
+
+section {
+  z-index: 1;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+}
+
+.card {
+  margin: 10px 10px 40px 10px;
+  padding: 10px;
+  box-shadow: 10px 10px 10px rgba(61, 136, 233, 0.411);
+}
+
 nav {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 25px;
 }
 nav a {
-  border-bottom: solid white;
   padding-bottom: 5px;
-}
-nav a:hover {
-  border-bottom: solid green;
 }
 
 /*Pages imports*/
