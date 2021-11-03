@@ -1,5 +1,6 @@
 /* utils imports*/
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -44,11 +45,11 @@ td, th {
   padding: 0;
 }
 
+/* fonts */
+/* colors */
 /* base imports*/
-h1 {
-  font-size: large;
-  font-weight: bold;
-  margin-bottom: 20px;
+* {
+  font-family: "Dosis", sans-serif;
 }
 
 a {
@@ -60,12 +61,28 @@ footer {
   color: white;
 }
 
+h1 {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 h2 {
   margin-bottom: 15px;
   font-size: large;
   text-align: center;
 }
 
+p {
+  padding: 10px;
+}
+
+@media all and (min-width: 950px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 70px;
+  }
+}
 /*components imports*/
 .nav-button {
   border-bottom: solid white;
@@ -79,13 +96,22 @@ h2 {
   border-bottom: solid #43d5cb;
 }
 
+@media all and (min-width: 950px) {
+  .nav-button {
+    border-top: solid white;
+    padding-top: 10px;
+  }
+  .nav-button:hover {
+    border-top: solid #9fd5f9;
+    border-bottom: solid white;
+  }
+}
 /*Layout imports*/
 footer {
   display: flex;
   padding: 25px 5px;
   text-align: center;
   justify-content: space-around;
-  margin-top: 25px;
   background-color: #242626;
 }
 footer h4 {
@@ -107,12 +133,24 @@ header .logo {
   margin-bottom: 20px;
 }
 
+@media all and (min-width: 950px) {
+  header {
+    text-align: left;
+    margin-bottom: 0px;
+  }
+  header .logo {
+    width: 200px;
+    padding: 25px 0px 0px 25px;
+  }
+}
 body {
   width: 100%;
 }
 
 section {
   z-index: 1;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 h1 {
@@ -121,17 +159,25 @@ h1 {
 }
 
 .card {
-  margin: 10px 10px 40px 10px;
+  border-radius: 2%;
+  margin: 0px 25px 0px 25px;
   padding: 10px;
-  box-shadow: 5px 5px 5px #43d5cb;
+  box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+  background-color: #fff;
 }
 
-.even-card {
+.card-picture {
+  display: none;
+}
+
+.even-container {
   background-color: #58dad1;
+  padding: 25px;
 }
 
-.odd-card {
+.odd-container {
   background-color: #9fd5f9;
+  padding: 25px;
 }
 
 /* Join us Page*/
@@ -142,6 +188,29 @@ h1 {
   box-shadow: 5px 5px 5px #43d5cb;
 }
 
+@media all and (min-width: 950px) {
+  .card {
+    box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+    max-width: 400px;
+    background-color: #fff;
+  }
+
+  .odd-container {
+    background-image: url(../../images/eye-device.jpg);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px;
+  }
+
+  .even-container {
+    padding: 50px 25px 50px 25px;
+  }
+  .even-container .card {
+    margin: auto;
+    max-width: 600px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
@@ -149,8 +218,18 @@ nav {
 }
 nav a {
   padding-bottom: 5px;
+  margin: 0px 10px 0px 10px;
 }
 
+@media all and (min-width: 950px) {
+  nav {
+    justify-content: right;
+    margin-bottom: 0px;
+  }
+  nav a {
+    margin: 0px 20px 0px 20px;
+  }
+}
 /*Pages imports*/
 
 /*# sourceMappingURL=style.css.map */
