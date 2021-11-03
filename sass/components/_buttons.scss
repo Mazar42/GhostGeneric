@@ -11,3 +11,16 @@
 .active{
     border-bottom: solid $tertiary-color;;
 }
+
+@media all and (min-width : 950px){
+
+    .nav-button{
+        border-top: solid white;
+        padding-top: 10px;
+
+        &:hover{
+            border-top: solid $lightened-secondary;
+            border-bottom: solid white;
+        }
+    }
+}

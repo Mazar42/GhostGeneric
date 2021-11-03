@@ -13,3 +13,16 @@ header {
         margin-bottom: 20px;
     }
 }
+
+@media all and (min-width : 950px){
+
+        header{
+            text-align: left;
+            margin-bottom: 0px;
+
+            .logo{
+                width: 200px;
+                padding: 25px 0px 0px 25px;
+            }
+        }
+}
