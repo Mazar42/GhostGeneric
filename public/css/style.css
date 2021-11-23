@@ -84,6 +84,7 @@ p {
   }
 }
 /*components imports*/
+/* navigation buttons */
 .nav-button {
   border-bottom: solid white;
   padding-bottom: 10px;
@@ -94,6 +95,39 @@ p {
 
 .active {
   border-bottom: solid #43d5cb;
+}
+
+/*sub navigation button - only for index page */
+.btnstyle {
+  margin: 15px;
+  width: 75%;
+  border-radius: 100px;
+  background: linear-gradient(to bottom, #87caf7, #2782be);
+  color: white;
+  padding: 15px 25px;
+  border-style: hidden;
+  cursor: pointer;
+  box-shadow: -6px 6px 13px 0px rgba(0, 0, 0, 0.247);
+  position: relative;
+  z-index: 1;
+}
+.btnstyle:hover {
+  box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.247);
+}
+.btnstyle:hover .btn-hover {
+  opacity: 1;
+}
+.btnstyle .btn-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #9fd5f9, #2b90d3);
+  border-radius: 100px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms;
 }
 
 @media all and (min-width: 950px) {
@@ -124,7 +158,6 @@ header {
   top: 0;
   z-index: 2;
   padding: 15px 15px 0px 15px;
-  margin-bottom: 20px;
   max-height: 150;
   text-align: center;
   box-shadow: 0px 5px 5px 0px rgba(61, 136, 233, 0.527);
@@ -158,6 +191,11 @@ h1 {
   text-align: center;
 }
 
+.sub-nav-container {
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
 .card {
   border-radius: 2%;
   margin: 0px 25px 0px 25px;
@@ -189,6 +227,11 @@ h1 {
 }
 
 @media all and (min-width: 950px) {
+  .sub-nav-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .card {
     box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
     max-width: 400px;
@@ -214,7 +257,6 @@ h1 {
 nav {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 25px;
 }
 nav a {
   padding-bottom: 5px;
@@ -224,7 +266,6 @@ nav a {
 @media all and (min-width: 950px) {
   nav {
     justify-content: right;
-    margin-bottom: 0px;
   }
   nav a {
     margin: 0px 20px 0px 20px;

@@ -13,6 +13,11 @@ h1{
     text-align: center;
 }
 
+.sub-nav-container{
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
 .card{
     border-radius: 2%;
     margin: 0px 25px 0px 25px;
@@ -45,6 +50,11 @@ h1{
 }
 
 @media all and (min-width : 950px){
+
+    .sub-nav-container{
+        display: flex;
+        justify-content: space-around;
+    }
 
     .card{
         box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
