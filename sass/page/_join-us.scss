@@ -1,0 +1,58 @@
+.join-us-page{
+    h1{
+        margin: 20px;
+    }
+}
+
+.join-us{
+
+    .join-us-card{
+        text-align: center;
+
+        h2{
+            padding: 50px;
+        }
+
+        p{
+            margin-bottom: 15px;
+        }
+    }
+
+    .odd-card{
+        background-color: $lightened-tertiary;  
+    }
+
+    .even-card{
+        background-color: $lightened-secondary;
+    }
+}
+
+.join-us-btn-container{
+    text-align: center;
+
+    .join-us-btn{
+        max-width: 300px;
+    }
+}
+
+
+@media all and (min-width : 950px){
+
+    .join-us{
+        display: flex;
+
+        .join-us-card{
+            height: 500px;
+            padding: 75px;
+        }
+    
+        .odd-card{
+            background-color: $lightened-tertiary;  
+        }
+    
+        .even-card{
+            background-color: $lightened-secondary;
+        }
+    }
+
+}

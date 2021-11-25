@@ -13,9 +13,17 @@ h1{
     text-align: center;
 }
 
+li{
+    margin-bottom: 5px;
+}
+
 .sub-nav-container{
     text-align: center;
     padding: 15px 0px 15px 0px;
+}
+
+.right-card-container{
+    margin-top: 25px;
 }
 
 .card{
@@ -40,7 +48,7 @@ h1{
     padding: 25px;
 }
 
-/* Join us Page*/
+/* Join us Page */
 
 .join-us-card{
     border-radius: 3.5%;
@@ -54,17 +62,23 @@ h1{
     .sub-nav-container{
         display: flex;
         justify-content: space-around;
+        margin: 30px;
+    }
+
+    .right-card-container{
+        display: flex;
+        justify-content:flex-end;
     }
 
     .card{
         box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
-        max-width: 400px;
+        max-width: 500px;
         background-color: #fff;
     }
 
     .odd-container{
         background-image: url(../../images/eye-device.jpg);
-        height: 500px;
+        height: 625px;
         background-size:cover;
         background-repeat: no-repeat;
         padding: 25px;

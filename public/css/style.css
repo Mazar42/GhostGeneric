@@ -62,7 +62,7 @@ footer {
 }
 
 h1 {
-  font-size: larger;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -71,16 +71,30 @@ h2 {
   margin-bottom: 15px;
   font-size: large;
   text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 p {
   padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 @media all and (min-width: 950px) {
   h1 {
     font-size: 2.5rem;
     margin-bottom: 70px;
+  }
+
+  button {
+    font-size: 1.2rem;
+    font-weight: 400;
   }
 }
 /*components imports*/
@@ -151,6 +165,12 @@ footer {
 footer h4 {
   padding: 3px;
 }
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
 
 header {
   position: sticky;
@@ -191,9 +211,17 @@ h1 {
   text-align: center;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
 .sub-nav-container {
   text-align: center;
   padding: 15px 0px 15px 0px;
+}
+
+.right-card-container {
+  margin-top: 25px;
 }
 
 .card {
@@ -218,7 +246,7 @@ h1 {
   padding: 25px;
 }
 
-/* Join us Page*/
+/* Join us Page */
 .join-us-card {
   border-radius: 3.5%;
   margin: 10px 30px 40px 30px;
@@ -230,17 +258,23 @@ h1 {
   .sub-nav-container {
     display: flex;
     justify-content: space-around;
+    margin: 30px;
+  }
+
+  .right-card-container {
+    display: flex;
+    justify-content: flex-end;
   }
 
   .card {
     box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
-    max-width: 400px;
+    max-width: 500px;
     background-color: #fff;
   }
 
   .odd-container {
     background-image: url(../../images/eye-device.jpg);
-    height: 500px;
+    height: 625px;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 25px;
@@ -269,8 +303,52 @@ nav a {
   }
   nav a {
     margin: 0px 20px 0px 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
   }
 }
 /*Pages imports*/
+.join-us-page h1 {
+  margin: 20px;
+}
+
+.join-us .join-us-card {
+  text-align: center;
+}
+.join-us .join-us-card h2 {
+  padding: 50px;
+}
+.join-us .join-us-card p {
+  margin-bottom: 15px;
+}
+.join-us .odd-card {
+  background-color: #58dad1;
+}
+.join-us .even-card {
+  background-color: #9fd5f9;
+}
+
+.join-us-btn-container {
+  text-align: center;
+}
+.join-us-btn-container .join-us-btn {
+  max-width: 300px;
+}
+
+@media all and (min-width: 950px) {
+  .join-us {
+    display: flex;
+  }
+  .join-us .join-us-card {
+    height: 500px;
+    padding: 75px;
+  }
+  .join-us .odd-card {
+    background-color: #58dad1;
+  }
+  .join-us .even-card {
+    background-color: #9fd5f9;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
