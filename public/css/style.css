@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /* utils imports*/
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
-@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -52,6 +53,10 @@ td, th {
   font-family: "Dosis", sans-serif;
 }
 
+h1 {
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -62,8 +67,8 @@ footer {
 }
 
 h1 {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 200;
   margin-bottom: 20px;
 }
 
@@ -86,15 +91,29 @@ li {
   font-weight: 400;
 }
 
+button {
+  font-weight: 400;
+}
+
+#consultation h3 {
+  color: #2782be;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
 @media all and (min-width: 950px) {
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 70px;
   }
 
   button {
     font-size: 1.2rem;
     font-weight: 400;
+  }
+
+  #consultation .session-card-container {
+    font-size: 1.3rem;
   }
 }
 /*components imports*/
@@ -111,10 +130,10 @@ li {
   border-bottom: solid #43d5cb;
 }
 
-/*sub navigation button - only for index page */
+/*sub navigation button*/
 .btnstyle {
   margin: 15px;
-  width: 75%;
+  width: 300px;
   border-radius: 100px;
   background: linear-gradient(to bottom, #87caf7, #2782be);
   color: white;
@@ -144,6 +163,39 @@ li {
   transition: opacity 200ms;
 }
 
+/* RDV buttons */
+.btnstyle-rdv {
+  margin: 15px;
+  width: 200px;
+  border-radius: 100px;
+  background: linear-gradient(to bottom, #58dad1, #43d5cb);
+  color: black;
+  padding: 5px 10px;
+  border-style: hidden;
+  cursor: pointer;
+  box-shadow: -6px 6px 13px 0px rgba(0, 0, 0, 0.247);
+  position: relative;
+  z-index: 1;
+}
+.btnstyle-rdv:hover {
+  box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.247);
+}
+.btnstyle-rdv:hover .btn-hover {
+  opacity: 1;
+}
+.btnstyle-rdv .btn-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #43d5cb, #58dad1);
+  border-radius: 100px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms;
+}
+
 @media all and (min-width: 950px) {
   .nav-button {
     border-top: solid white;
@@ -161,9 +213,6 @@ footer {
   text-align: center;
   justify-content: space-around;
   background-color: #242626;
-}
-footer h4 {
-  padding: 3px;
 }
 footer a {
   color: white;
@@ -215,79 +264,6 @@ li {
   margin-bottom: 5px;
 }
 
-.sub-nav-container {
-  text-align: center;
-  padding: 15px 0px 15px 0px;
-}
-
-.right-card-container {
-  margin-top: 25px;
-}
-
-.card {
-  border-radius: 2%;
-  margin: 0px 25px 0px 25px;
-  padding: 10px;
-  box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
-  background-color: #fff;
-}
-
-.card-picture {
-  display: none;
-}
-
-.even-container {
-  background-color: #58dad1;
-  padding: 25px;
-}
-
-.odd-container {
-  background-color: #9fd5f9;
-  padding: 25px;
-}
-
-/* Join us Page */
-.join-us-card {
-  border-radius: 3.5%;
-  margin: 10px 30px 40px 30px;
-  padding: 25px;
-  box-shadow: 5px 5px 5px #43d5cb;
-}
-
-@media all and (min-width: 950px) {
-  .sub-nav-container {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px;
-  }
-
-  .right-card-container {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .card {
-    box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
-    max-width: 500px;
-    background-color: #fff;
-  }
-
-  .odd-container {
-    background-image: url(../../images/eye-device.jpg);
-    height: 625px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 25px;
-  }
-
-  .even-container {
-    padding: 50px 25px 50px 25px;
-  }
-  .even-container .card {
-    margin: auto;
-    max-width: 600px;
-  }
-}
 nav {
   display: flex;
   justify-content: space-around;
@@ -308,15 +284,134 @@ nav a {
   }
 }
 /*Pages imports*/
+/* lobby intro */
+.sub-nav-container {
+  justify-content: center;
+  text-align: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.right-card-container {
+  margin-top: 25px;
+}
+
+.card {
+  border-radius: 2%;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+  background-color: #fff;
+}
+
+.even-container {
+  background-color: #58dad1;
+  padding: 25px;
+}
+
+.odd-container {
+  background-color: #fff;
+  padding: 25px;
+}
+
+/* Lobby 'Qui sommes-nous ?' */
+#qui-sommes-nous {
+  margin: 35px 0px 0px 0px;
+  scroll-margin-top: 200px;
+}
+#qui-sommes-nous .card {
+  max-width: 550px;
+  margin: auto;
+}
+
+/* Lobby 'déroulement d'une consultation' */
+#consultation {
+  scroll-margin-top: 200px;
+}
+#consultation .session-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #58dad1;
+  border-radius: 10px;
+  margin: 20px 10px 50px 10px;
+}
+#consultation .session-card-container .image-card {
+  margin-top: 15px;
+  max-width: 500px;
+}
+#consultation h2 {
+  padding: 25px;
+}
+
+/* Join us Page */
+.join-us-card {
+  border-radius: 3.5%;
+  margin: 10px 30px 40px 30px;
+  padding: 25px;
+  box-shadow: 5px 5px 5px #43d5cb;
+}
+
+/* Desktop version */
+@media all and (min-width: 950px) {
+  /* Lobby intro */
+  .sub-nav-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+  .right-card-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card {
+    box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+    max-width: 500px;
+    background-color: #fff;
+  }
+
+  .first {
+    background-image: url(../../images/eye-device.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+  }
+
+  .odd-container {
+    padding: 25px;
+    background-color: white;
+  }
+
+  .even-container {
+    padding: 50px 25px 50px 25px;
+  }
+  .even-container .card {
+    margin: auto;
+    max-width: 600px;
+  }
+
+  /* Lobby 'déroulement d'une consultation' */
+  #consultation .session-card-container {
+    flex-direction: row;
+    background-color: #fff;
+    border-style: none;
+  }
+  #consultation .session-card-container .card {
+    padding: 100px;
+  }
+  #consultation .even {
+    flex-direction: row-reverse;
+  }
+}
 .join-us-page h1 {
   margin: 20px;
 }
 
 .join-us .join-us-card {
   text-align: center;
-}
-.join-us .join-us-card h2 {
-  padding: 50px;
 }
 .join-us .join-us-card p {
   margin-bottom: 15px;
@@ -332,7 +427,7 @@ nav a {
   text-align: center;
 }
 .join-us-btn-container .join-us-btn {
-  max-width: 300px;
+  width: 75%;
 }
 
 @media all and (min-width: 950px) {
@@ -343,12 +438,32 @@ nav a {
     height: 500px;
     padding: 75px;
   }
+  .join-us .join-us-card h2 {
+    padding: 50px;
+  }
   .join-us .odd-card {
     background-color: #58dad1;
   }
   .join-us .even-card {
     background-color: #9fd5f9;
   }
+
+  .join-us-btn {
+    max-width: 350px;
+  }
+}
+.nos-centres {
+  padding: 25px;
+}
+.nos-centres .cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nos-centres .cards-container .card {
+  width: 300px;
+  margin: 25px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

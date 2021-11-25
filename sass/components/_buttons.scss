@@ -15,11 +15,11 @@
 }
 
 
-/*sub navigation button - only for index page */
+/*sub navigation button*/
 
 .btnstyle{
     margin: 15px;
-    width: 75%;
+    width: 300px;
     border-radius: 100px;
     background: $button-color;
     color: white;
@@ -44,6 +44,42 @@
         bottom: 0;
         left: 0;
         background: $lightened-button-color;
+        border-radius: 100px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 200ms;
+    }
+}
+
+/* RDV buttons */
+
+.btnstyle-rdv{
+    margin:15px;
+    width: 200px;
+    border-radius: 100px;
+    background: $rdv-button-color;
+    color: black;
+    padding: 5px 10px;
+    border-style: hidden;
+    cursor: pointer;
+    box-shadow: -6px 6px 13px 0px rgba(0, 0, 0, 0.247);
+    position: relative;
+    z-index: 1;
+
+    &:hover{
+        box-shadow: -6px 6px 6px 0px rgba(0, 0, 0, 0.247);
+        & .btn-hover{
+            opacity: 1;
+        }
+    }
+
+    .btn-hover{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: $active-rdv-button-color;
         border-radius: 100px;
         opacity: 0;
         z-index: -1;

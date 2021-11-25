@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
 
 
 /* fonts */
 
 $main-font: 'Dosis', sans-serif;
+$title-font: 'Be Vietnam Pro', sans-serif;
 
 /* colors */
 
@@ -18,3 +19,6 @@ $lightened-primary:lighten($primary-color, 5%);
 
 $button-color: linear-gradient(to bottom, $secondary-color ,$primary-color);
 $lightened-button-color:linear-gradient(to bottom, $lightened-secondary, $lightened-primary);
+
+$rdv-button-color : linear-gradient(to bottom, $lightened-tertiary ,$tertiary-color);
+$active-rdv-button-color:linear-gradient(to bottom, $tertiary-color, $lightened-tertiary);

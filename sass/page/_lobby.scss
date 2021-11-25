@@ -1,0 +1,148 @@
+/* lobby intro */
+
+.sub-nav-container{
+    justify-content: center;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.right-card-container{
+    margin-top: 25px;
+}
+
+.card{
+    border-radius: 2%;
+    // margin: 0px 25px 0px 25px;
+    padding:10px;
+    box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+    background-color: #fff;
+}
+
+
+
+.even-container{
+    background-color: $lightened-tertiary;
+    padding: 25px;
+}
+
+.odd-container{
+    background-color: #fff;
+    padding: 25px;
+}
+
+/* Lobby 'Qui sommes-nous ?' */
+
+#qui-sommes-nous{
+    margin: 35px 0px 0px 0px;
+    scroll-margin-top: 200px;
+    .card{
+        max-width: 550px;
+        margin: auto;
+    }
+}
+
+/* Lobby 'déroulement d'une consultation' */
+
+#consultation{
+    scroll-margin-top: 200px;
+
+    .session-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $lightened-tertiary;
+    border-radius: 10px;
+    margin: 20px 10px 50px 10px;
+
+        .image-card{
+        margin-top: 15px;
+        max-width: 500px;
+        }
+    }
+
+
+    h2{
+        padding: 25px;
+    }
+}
+
+
+
+
+/* Join us Page */
+
+.join-us-card{
+    border-radius: 3.5%;
+    margin: 10px 30px 40px 30px;
+    padding: 25px;
+    box-shadow: 5px 5px 5px $tertiary-color;
+}
+
+/* Desktop version */
+
+@media all and (min-width : 950px){
+
+    /* Lobby intro */
+
+    .sub-nav-container{
+        display: flex;
+        justify-content: space-around;
+        margin: 30px;
+    }
+
+    .right-card-container{
+        display: flex;
+        justify-content:flex-end;
+        
+    }
+    
+    .card{
+        box-shadow: 5px 5px 5px rgba(29, 3, 3, 0.301);
+        max-width: 500px;
+        background-color: #fff;
+    }
+
+    .first{
+        background-image: url(../../images/eye-device.jpg);
+        background-size:cover;
+        background-repeat: no-repeat;
+        height: 650px; 
+    }
+
+    .odd-container{
+        
+        padding: 25px;
+        background-color: white;
+
+    }
+
+    .even-container{
+        padding: 50px 25px 50px 25px;
+
+        .card{
+            margin: auto;
+            max-width: 600px;
+        }
+    }
+
+    /* Lobby 'déroulement d'une consultation' */
+
+    #consultation{
+        .session-card-container{
+            flex-direction: row;
+            background-color: #fff;
+            border-style: none;
+
+            .card{
+                padding: 100px;
+            }
+        }
+
+        .even{
+            flex-direction: row-reverse;
+        }
+    }
+}

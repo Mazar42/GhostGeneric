@@ -9,10 +9,6 @@
     .join-us-card{
         text-align: center;
 
-        h2{
-            padding: 50px;
-        }
-
         p{
             margin-bottom: 15px;
         }
@@ -31,7 +27,7 @@
     text-align: center;
 
     .join-us-btn{
-        max-width: 300px;
+        width: 75%;
     }
 }
 
@@ -44,6 +40,10 @@
         .join-us-card{
             height: 500px;
             padding: 75px;
+
+            h2{
+                padding: 50px;
+            }
         }
     
         .odd-card{
@@ -53,6 +53,10 @@
         .even-card{
             background-color: $lightened-secondary;
         }
+    }
+
+    .join-us-btn{
+        max-width: 350px;
     }
 
 }
