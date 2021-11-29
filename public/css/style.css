@@ -241,13 +241,6 @@ body {
   width: 100%;
 }
 
-#lobby-intro {
-  z-index: 1;
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 0px 60px 0px 60px;
-}
-
 section {
   z-index: 1;
   margin: 0 auto;
@@ -263,6 +256,14 @@ li {
   margin-bottom: 5px;
 }
 
+@media all and (min-width: 950px) {
+  #lobby-intro {
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px 60px 0px 60px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-around;
