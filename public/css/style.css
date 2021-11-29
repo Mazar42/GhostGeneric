@@ -93,6 +93,7 @@ li {
 
 button {
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 #consultation h3 {
@@ -122,8 +123,8 @@ button {
   border-bottom: solid white;
   padding-bottom: 10px;
 }
-.nav-button:hover {
-  border-bottom: solid #43d5cb;
+.nav-button:hover a {
+  color: #2782be;
 }
 
 .active {
@@ -196,16 +197,6 @@ button {
   transition: opacity 200ms;
 }
 
-@media all and (min-width: 950px) {
-  .nav-button {
-    border-top: solid white;
-    padding-top: 10px;
-  }
-  .nav-button:hover {
-    border-top: solid #9fd5f9;
-    border-bottom: solid white;
-  }
-}
 /*Layout imports*/
 footer {
   display: flex;
@@ -237,16 +228,24 @@ header .logo {
 
 @media all and (min-width: 950px) {
   header {
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0px;
   }
   header .logo {
-    width: 200px;
+    width: 150px;
     padding: 25px 0px 0px 25px;
   }
 }
 body {
   width: 100%;
+}
+
+#lobby-intro {
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0px 60px 0px 60px;
 }
 
 section {
@@ -276,9 +275,10 @@ nav a {
 @media all and (min-width: 950px) {
   nav {
     justify-content: right;
+    padding-top: 40px;
   }
   nav a {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 50px 0px 50px;
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -374,7 +374,7 @@ nav a {
   }
 
   .first {
-    background-image: url(../../images/eye-device.jpg);
+    background-image: url(../../images/white-bg--eye-device.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 650px;

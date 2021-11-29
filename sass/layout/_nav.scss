@@ -11,9 +11,10 @@ nav{
 @media all and (min-width : 950px){
     nav{
         justify-content: right;
+        padding-top: 40px;
 
         a{
-            margin: 0px 20px 0px 20px;
+            margin: 0px 50px 0px 50px;
             font-size: 1.3rem;
             font-weight: 500;
         }

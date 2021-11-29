@@ -6,7 +6,11 @@
 
 
     &:hover{
-        border-bottom: solid $tertiary-color;
+
+        a{
+          color: $primary-color;  
+        }
+        
     }
 }
 
@@ -87,15 +91,3 @@
     }
 }
 
-@media all and (min-width : 950px){
-
-    .nav-button{
-        border-top: solid white;
-        padding-top: 10px;
-
-        &:hover{
-            border-top: solid $lightened-secondary;
-            border-bottom: solid white;
-        }
-    }
-}

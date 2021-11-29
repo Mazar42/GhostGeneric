@@ -16,11 +16,12 @@ header {
 @media all and (min-width : 950px){
 
         header{
-            text-align: left;
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 0px;
 
             .logo{
-                width: 200px;
+                width: 150px;
                 padding: 25px 0px 0px 25px;
             }
         }
