@@ -294,6 +294,7 @@ nav a {
 
 .right-card-container {
   margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .card {
@@ -378,7 +379,7 @@ nav a {
     background-image: url(../../images/white-bg--eye-device.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 650px;
+    height: fit-content;
   }
 
   .odd-container {
@@ -408,7 +409,7 @@ nav a {
   }
 }
 .join-us-page h1 {
-  margin: 20px;
+  margin: 30px;
 }
 
 .join-us .join-us-card {
@@ -429,6 +430,7 @@ nav a {
 }
 .join-us-btn-container .join-us-btn {
   width: 75%;
+  margin-bottom: 40px;
 }
 
 @media all and (min-width: 950px) {
