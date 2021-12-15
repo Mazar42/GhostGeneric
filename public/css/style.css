@@ -227,6 +227,10 @@ header .logo {
   width: 125px;
 }
 
+.hide-nav {
+  overflow: hidden;
+}
+
 @media all and (min-width: 950px) {
   header {
     margin-bottom: 0px;
@@ -274,7 +278,6 @@ li {
   right: 0;
   background-color: rgba(255, 255, 255, 0.699);
   transition: all 0.5s;
-  overflow: hidden;
 }
 .navbar-links li a {
   display: block;
@@ -284,7 +287,9 @@ li {
 }
 
 .display-navbar {
+  display: flex;
   width: 100%;
+  transition: all 0.5s;
 }
 
 /* toggle menu */
