@@ -10,38 +10,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo"><a href="./index.html"><img src="./images/Logo_iRelaisVision_RGB_cropped.png" alt="Logo relais-vision"></a></div>
+    <header> 
+        <div class="logo"><a href="./index.html"><img src="./images/Logo_iRelaisVision_RGB_cropped.png"
+                    alt="Logo relais-vision"></a></div>
         <nav>
-            <div class="nav-button active">
-                <a href="">Accueil</a>
-                <span class="btn-hover"></span>
-            </div>
-            <div class="nav-button">
-                <a href="./pages/centres.html">Nos centres</a>
-                <span class="btn-hover"></span>
-            </div>
-            <div class="nav-button">
-                <a href="./pages/nous-rejoindre.html">Nous rejoindre</a>
-                <span class="btn-hover"></span>
-            </div>
+            <ul class="navbar-links" id="navbar">
+                <li class="navbar-link"> <a href="./index.html">Accueil</a> </li>
+                <li class="navbar-link"> <a href="./pages/centres.html">Nos centres</a> </li>
+                <li class="navbar-link"> <a href="./pages/nous-rejoindre.html">Nous rejoindre</a> </li>
+                <li class="navbar-link"> <a href="./pages/faq.html">FAQ</a> </li>
+            </ul>
+            <button class="burger" id="burger-button">
+                <span class="bar"></span>
+            </button>
         </nav>
     </header>
 
     <section id="lobby-intro">
         <div class="sub-nav-container">
-            <a href="#qui-sommes-nous"><button class="btnstyle" type="button">
-                Qui sommes-nous ?
-                <span class="btn-hover"></span>
-            </button></a>
-            <a href="./pages/centres.html"><button class="btnstyle" type="button">
-                Prendre rendez-vous
-                <span class="btn-hover"></span>
-            </button></a>
             <a href="#consultation"><button class="btnstyle" type="button">
                 Déroulement d'une consultation
                 <span class="btn-hover"></span>
             </button></a>
+            <a href="./pages/centres.html"><button class="btnstyle" type="button">
+                    Prendre rendez-vous
+                    <span class="btn-hover"></span>
+                </button></a>
+                <a href="#qui-sommes-nous"><button class="btnstyle" type="button">
+                    Qui sommes-nous ?
+                    <span class="btn-hover"></span>
+                </button></a>
         </div>
         <div class="first odd-container">
             <h1>Un rendez-vous rapide pour le renouvellement de vos lunettes</h1>
@@ -61,7 +59,8 @@
                     <ul class="vanilla-ul">
                         <li>Des professionnels paramédicaux et médicaux formés et à votre écoute</li>
                         <li>Des consultations accessibles de 6 à 49 ans, sans avance de frais </li>
-                        <li>Une prise en charge au tiers payant (Relais vision utilise des protocoles soutenus par la HAS et la CNAM)</li>
+                        <li>Une prise en charge au tiers payant (Relais vision utilise des protocoles soutenus par la
+                            HAS et la CNAM)</li>
                         <li>Un dossier médical sécurisé et confidentiel</li>
                         <li>Du matériel de pointe, récent et performant</li>
                         <li>Un logiciel complet et inovant</li>
@@ -89,6 +88,47 @@
             </div>
         </div>
 
+        <div class="odd-container" id="consultation">
+            <h2>Déroulement d'une consultation</h2>
+            <div class="session-card-container">
+                <div class="card">
+                    <h3>Première étape</h3>
+                    <h4>Présentation de votre carte vitale</h4>
+                    <p>Lors de votre rendez-vous, présentez votre carte vitale à l'orthoptiste. <br>
+                        Ce dernier valide avec vous les conditions d'admission.</p>
+                </div>
+                <div class="image-card"><img src="./images/etape1consultation.jpg" alt=""></div>
+            </div>
+            <div class="session-card-container even">
+                <div class="card">
+                    <h3>Seconde étape</h3>
+                    <h4>Examen de votre vision</h4>
+                    <p>Vous êtes ensuite pris en charge par un orthoptiste diplômé d'Etat qui réalise les mesures de
+                        votre vue à l'aide d'appareils ophtalmologiques de dernière génération.</p>
+                </div>
+                <div class="image-card"><img src="./images/etape2consultation.jpg" alt=""></div>
+            </div>
+            <div class="session-card-container">
+                <div class="card">
+                    <h3>Troisième étape</h3>
+                    <h4>Diagnostic du médecin</h4>
+                    <p>Les résultats sont ensuite transmis via notre logiciel dédié à l’ophtalmologiste partenaire qui
+                        valide à distance votre ordonnance de lunettes. Ce dernier pourra être amené à vous convoquer si
+                        une anomalie venait à être détectée.</p>
+                </div>
+                <div class="image-card"><img src="./images/etape3consultation.jpg" alt=""></div>
+            </div>
+            <div class="session-card-container even">
+                <div class="card">
+                    <h3>Dernière étape</h3>
+                    <h4>Récupération de l’ordonnance</h4>
+                    <p>Votre ordonnance vous est transmise sous 8 jours, par voie sécurisée. <br> L’examen est pris en
+                        charge par la sécurité sociale et votre mutuelle.</p>
+                </div>
+                <div class="image-card"><img src="./images/etape4consultation.jpg" alt=""></div>
+            </div>
+        </div>
+
         <div class="odd-container" id="qui-sommes-nous">
             <div class="card">
                 <h2>Qui sommes-nous ?</h2>
@@ -97,50 +137,16 @@
             </div>
         </div>
 
-        <div class="odd-container" id="consultation">
-            <h2>Déroulement d'une consultation</h2>
-            <div class="session-card-container"> 
-                <div class="card">
-                    <h3>Première étape</h3>
-                    <h4>Présentation de votre carte vitale</h4>
-                    <p>Lors de votre rendez-vous, présentez votre carte vitale à l'orthoptiste. <br>
-                    Ce dernier valide avec vous les conditions d'admission.</p>
-                </div>
-                <div class="image-card"><img src="./images/etape1consultation.jpg" alt=""></div>
-            </div>
-            <div class="session-card-container even">
-                <div class="card">
-                    <h3>Seconde étape</h3>
-                    <h4>Examen de votre vision</h4>
-                    <p>Vous êtes ensuite pris en charge par un orthoptiste diplômé d'Etat qui réalise les mesures de votre vue à l'aide d'appareils ophtalmologiques de dernière génération.</p>
-                </div>
-                <div class="image-card"><img src="./images/etape2consultation.jpg" alt=""></div>
-            </div>
-            <div class="session-card-container">
-                <div class="card">
-                    <h3>Troisième étape</h3>
-                    <h4>Diagnostic du médecin</h4>
-                    <p>Les résultats sont ensuite transmis via notre logiciel dédié à l’ophtalmologiste partenaire qui valide à distance votre ordonnance de lunettes. Ce dernier pourra être amené à vous convoquer si une anomalie venait à être détectée.</p>
-                </div>
-                <div class="image-card"><img src="./images/etape3consultation.jpg" alt=""></div>
-            </div>
-            <div class="session-card-container even">
-                <div class="card">
-                    <h3>Dernière étape</h3>
-                    <h4>Récupération de l’ordonnance</h4>
-                    <p>Votre ordonnance vous est transmise sous 8 jours, par voie sécurisée. <br> L’examen est pris en charge par la sécurité sociale et votre mutuelle.</p>
-                </div>
-                <div class="image-card"><img src="./images/etape4consultation.jpg" alt=""></div>
-            </div>
-        </div>
+
 
     </section>
 
     <footer>
         <h3>Mentions Légales</h3>
-        <h3>FAQ</h3>
         <h3> <a href="mailto:contact@relais-vision.fr">Contact</a> </h3>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

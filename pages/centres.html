@@ -8,22 +8,22 @@
     <title>Relais Vision</title>
 </head>
 <body>
-    <header><div class="logo"><a href="../index.html"><img src="../images/Logo_iRelaisVision_RGB_cropped.png" alt="Logo relais-vision"></a></div>
-    <nav>
-        <div class="nav-button">
-            <a href="../index.html">Accueil</a>
-            <span class="btn-hover"></span>
-        </div>
-        <div class="nav-button active">
-            <a href="../pages/centres.html">Nos centres</a>
-            <span class="btn-hover"></span>
-        </div>
-        <div class="nav-button">
-            <a href="../pages/nous-rejoindre.html">Nous rejoindre</a>
-            <span class="btn-hover"></span>
-        </div>
-    </nav>
+    <header> 
+        <div class="logo"><a href="./index.html"><img src="../images/Logo_iRelaisVision_RGB_cropped.png"
+                    alt="Logo relais-vision"></a></div>
+        <nav>
+            <ul class="navbar-links" id="navbar">
+                <li class="navbar-link"> <a href="../index.html">Accueil</a> </li>
+                <li class="navbar-link"> <a href="./centres.html">Nos centres</a> </li>
+                <li class="navbar-link"> <a href="./nous-rejoindre.html">Nous rejoindre</a> </li>
+                <li class="navbar-link"> <a href="./faq.html">FAQ</a> </li>
+            </ul>
+            <button class="burger" id="burger-button">
+                <span class="bar"></span>
+            </button>
+        </nav>
     </header>
+
 
     <section class="nos-centres">
         <h1>Prenez rendez-vous dès maintenant pour un bilan visuel dans l’un de nos centres</h1>
@@ -127,5 +127,7 @@
         <h3>FAQ</h3>
         <h3>Contact</h3>
     </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>

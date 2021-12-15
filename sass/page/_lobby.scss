@@ -18,7 +18,6 @@
     background-color: #fff;
 }
 
-
 .even-container{
     background-color: $lightened-tertiary;
     padding: 25px;
@@ -32,8 +31,6 @@
 /* Lobby 'Qui sommes-nous ?' */
 
 #qui-sommes-nous{
-    margin: 35px 0px 0px 0px;
-    scroll-margin-top: 200px;
     .card{
         max-width: 550px;
         margin: auto;
@@ -43,8 +40,7 @@
 /* Lobby 'déroulement d'une consultation' */
 
 #consultation{
-    scroll-margin-top: 200px;
-
+    
     .session-card-container{
     display: flex;
     flex-direction: column;
@@ -54,14 +50,13 @@
     border-width: 1px;
     border-color: $lightened-tertiary;
     border-radius: 10px;
-    margin: 20px 10px 50px 10px;
+    margin: 10px;
 
         .image-card{
         margin-top: 15px;
         max-width: 500px;
         }
     }
-
 
     h2{
         padding: 25px;
