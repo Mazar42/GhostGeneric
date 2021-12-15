@@ -281,10 +281,6 @@ li {
   transition: all 0.1s;
   white-space: nowrap;
 }
-.navbar-links li a:hover {
-  padding: 1.3rem;
-  letter-spacing: 3px;
-}
 
 .display-navbar {
   width: 100%;
@@ -346,7 +342,10 @@ li {
 @media all and (min-width: 950px) {
   .navbar-links {
     display: flex;
-    margin-top: 45px;
+    flex-direction: row;
+    position: sticky;
+    width: 50%;
+    height: fit-content;
   }
   .navbar-links li a {
     margin: 20px;
@@ -450,6 +449,7 @@ li {
     display: flex;
     justify-content: space-around;
     margin: 30px;
+    flex-wrap: wrap;
   }
 
   .right-card-container {
