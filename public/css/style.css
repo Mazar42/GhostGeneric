@@ -346,6 +346,7 @@ li {
     position: sticky;
     width: 50%;
     height: fit-content;
+    background-color: transparent;
   }
   .navbar-links li a {
     margin: 20px;
